@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Stackly | Login</title>
+  <title> Corporate Solutions</title>
   <link rel="stylesheet" href="auth.css" />
 </head>
 <style>
@@ -65,18 +65,19 @@
         </div>
 
         <div class="input-group">
-          <label for="password">Password</label>
-          <div class="password-wrapper">
-            <input type="password" id="password" placeholder="Enter your password" required />
-            
-            <span class="toggle-password" onclick="togglePassword('password')">👁️</span>
+            <label for="password">Password</label>
+            <div class="password-wrapper">
+              <input type="password" id="password" placeholder="Enter your password" required />
+              <span class="toggle-password" onclick="togglePassword('password')">👁️</span>
+            </div>
           </div>
+          
           
           <div class="forgot-password">
             
             <a href="./404.html" >Forgot Password?</a></a>
 
-            <a href="./index.html" class="back-btn">
+            <a href="./hom2.html" class="back-btn">
               <i class="fa fa-arrow-left"></i> Back
             </a>
             
@@ -91,14 +92,14 @@
 
 
         <p class="switch-text">Don't have an account? 
-          <a href="signup.html">Sign Up</a>
+          <a href="signup1.html">Sign Up</a>
         </p>
       </form>
     </div>
   </div>
   <script>
     
-document.getElementById("loginForm").addEventListener("submit", function (event) {
+document.getElementById("loginForm").addEventListener("submit", function (e) {
     event.preventDefault(); // stop auto reload
 
     let email = document.getElementById("email").value.trim();
@@ -114,6 +115,20 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
     // if fields filled → redirect
     window.location.href = "./404.html";
 });
+
+function togglePassword(id) {
+    const input = document.getElementById(id);
+    const icon = input.nextElementSibling;
+
+    if (input.type === "password") {
+        input.type = "text";
+        // icon.textContent = "🙈"; // change icon when showing password
+    } else {
+        input.type = "password";
+        icon.textContent = "👁️"; // change back when hiding password
+    }
+}
+
 
 
   </script>
