@@ -1,0 +1,121 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* BACKGROUND WITH OVERLAY */
+body {
+    background: url("./log.webp")
+                no-repeat center/cover;
+    min-height: 100vh;
+    position: relative;
+}
+
+.bg-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    top: 0; left: 0;
+    z-index: -1;
+}
+
+/* HEADER */
+.dashboard-header {
+    text-align: center;
+    padding: 50px 20px;
+    color: #fff;
+}
+
+.dashboard-header h1 {
+    font-size: 38px;
+    font-weight: 700;
+    text-shadow: 0 0 12px rgba(0,0,0,0.4);
+}
+
+.dashboard-header p {
+    margin-top: 5px;
+    font-size: 18px;
+}
+    
+/* STAT CARDS */
+.stats-container {
+    max-width: 1250px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.stat-card {
+    background: rgba(255,255,255,0.18);
+    padding: 20px;
+    border-radius: 14px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.35);
+    color: #fff;
+    text-align: center;
+    transition: 0.4s;
+    box-shadow: 0 0 14px rgba(0,0,0,0.25);
+}
+
+.stat-card:hover {
+    transform: translateY(-8px);
+    background: rgba(255,255,255,0.3);
+}
+
+.stat-card img {
+    width: 70px;
+    margin-bottom: 10px;
+}
+
+.stat-card h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.stat-card p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* CHARTS */
+.charts-wrapper {
+    max-width: 1300px;
+    margin: 20px auto 50px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+.chart-card {
+    background: rgba(255,255,255,0.15);
+    border-radius: 14px;
+    padding: 20px;
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    transition: 0.4s;
+}
+
+.chart-card:hover {
+    transform: translateY(-8px);
+    background: rgba(255,255,255,0.3);
+}
+
+.chart-card h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .dashboard-header h1 { font-size: 30px; }
+    .stat-card p { font-size: 20px; }
+}
