@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Solutions & Technology</title>
+
+    <!-- CSS Files -->
+   
+    
+    <link rel="stylesheet" href="./responsive.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+    
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+        <a href="home2.html">   
+            <img src="./white.webp" alt="Stackly Logo" style="height: 60px; ">
+          </a>
+          
+
+        <!-- <div class="logo">Tech<span>Solutions</span></div> -->
+
+        <!-- Navigation -->
+        <nav class="navbar">
+            <ul class="nav-links" >
+
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-btn">Home <i class="fa-solid fa-caret-down"></i></a>
+                
+                    <ul class="dropdown-content">
+                        <li><a href="./index.html">Home 1</a></li>
+                        <li><a href="./home2.html">Home 2</a></li>
+                    </ul>
+                </li>
+                
+
+                <li><a href="./services1.html">Services</a></li>
+                <li><a href="./aboutus1.html">About</a></li>
+                <li><a href="./casestudies.html">Case-Studies</a></li>
+                <li><a href="./dashboard1.html">dashboard</a></li>
+                <li><a href="./contact1.html">Contact</a></li>
+                <li><a href="./login1.html">Login</a></li>
+
+            </ul>
+        </nav>
+
+
+        
+
+        <!-- Toggle -->
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+    </header>
+
+
+<!-- ABOUT PAGE (UPDATED WITH BACKGROUND IMAGES) -->
+
+<!-- HERO SECTION -->
+<section class="about-hero">
+    <div class="about-bg"></div>
+    <div class="about-content">
+      <h1>About Our AI & Automation Expertise</h1>
+      <p>We build intelligent and automated systems that redefine business efficiency.</p>
+    </div>
+  </section>
+  
+  <!-- ABOUT COMPANY -->
+  <section class="about-company">
+    <div class="about-left">
+      <h2>Who We Are</h2>
+      <p>
+        We are a leading technology company delivering advanced AI solutions, machine learning models, and 
+        automation platforms to global enterprises. Our expertise lies in transforming manual processes into 
+        intelligent automated workflows.
+      </p>
+      <p>
+        With strong engineering, deep data science knowledge, and R&D capabilities, we help companies achieve 
+        operational excellence through fully integrated AI ecosystems.
+      </p>
+    </div>
+  
+    <div class="about-right">
+      <img src="./corp1.webp" alt="AI Team">
+    </div>
+  </section>
+  
+  <!-- MISSION – VISION – VALUES -->
+  <section class="mission-vision">
+    <div class="mv-card">
+      <img src="./mission.webp" />
+      <h3>Our Mission</h3>
+      <p>To empower organizations with cutting-edge automation and AI that boosts productivity.</p>
+    </div>
+  
+    <div class="mv-card">
+      <img src="./vision.webp" />
+      <h3>Our Vision</h3>
+      <p>To be a global leader in intelligent enterprise automation and AI transformation.</p>
+    </div>
+  
+    <div class="mv-card">
+      <img src="./cloud.jpg" />
+      <h3>Our Values</h3>
+      <p>Innovation, integrity, quality, transparency, and long-term client success.</p>
+    </div>
+  </section>
+  
+  <!-- WHY CHOOSE US -->
+  <section class="why-choose-us">
+    <h2>Why Choose Us?</h2>
+    <div class="reasons">
+  
+      <div class="reason-card">
+        <img src="./AI chatbot.webp">
+        <h4>Advanced AI Technology</h4>
+        <p>We develop high-accuracy AI models powered by deep learning and automation tools.</p>
+      </div>
+  
+      <div class="reason-card">
+        <img src="./automation.webp">
+        <h4>Complete Automation</h4>
+        <p>We automate repetitive workflows using RPA bots, triggers, and intelligent scripts.</p>
+      </div>
+  
+      <div class="reason-card">
+        <img src="./data analytics 1.webp">
+        <h4>Data Intelligence</h4>
+        <p>We turn raw data into predictive insights using AI-powered analytics dashboards.</p>
+      </div>
+  
+      <div class="reason-card">
+        <img src="./corporate.webp">
+        <h4>24/7 Support</h4>
+        <p>Our dedicated team ensures your AI systems run smoothly at all times.</p>
+      </div>
+  
+    </div>
+  </section>
+  
+  <style>
+  /* HERO */
+  .about-hero{
+    position: relative;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+  }
+  .about-bg{
+    position: absolute;
+    top:0; left:0;
+    width:100%; height:100%;
+    background: url('./ima2.webp') no-repeat center/cover;
+    filter: brightness(0.45);
+  }
+  .about-content{
+    position: relative;
+    z-index: 2;
+    width: 80%;
+    animation: fadeIn 2s ease;
+  }
+  .about-content h1{
+    font-size: 3rem;
+    background: linear-gradient(90deg,#ff6b81,#ffc93c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* ABOUT COMPANY */
+  .about-company{
+    display: flex;
+    padding: 60px;
+    gap: 40px;
+    align-items: center;
+  }
+  .about-company img{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  }
+  .about-company p{
+    color:#444;
+    font-size: 1.1rem;
+  }
+  
+  /* MISSION – VISION */
+  .mission-vision{
+    display:flex;
+    justify-content:center;
+    padding:70px 20px;
+    gap:30px;
+    background:#f3f4f8;
+    flex-wrap:wrap;
+  }
+  .mv-card{
+    width:300px;
+    text-align:center;
+  }
+  .mv-card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  /* WHY CHOOSE US */
+  .why-choose-us{
+    padding:70px 20px;
+    text-align:center;
+  }
+  .reasons{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+  }
+  .reason-card{
+    width:260px;
+    padding:20px;
+    border-radius:20px;
+    background:#fff;
+    box-shadow:0 5px 25px rgba(0,0,0,0.1);
+  }
+  .reason-card img{
+    width:100%;
+    height:150px;
+    object-fit:cover;
+    border-radius:18px;
+  }
+  
+  /* RESPONSIVE */
+  @media(max-width:900px){
+    .about-company{ flex-direction:column; }
+    .about-content h1{ font-size: 2.2rem; }
+  }
+  @keyframes fadeIn{
+    from{ opacity:0; transform:translateY(20px); }
+    to{ opacity:1; transform:translateY(0); }
+  }
+  </style>
+
+
+<!-- <footer> -->
+    <footer class="footer">
+        <div class="footer-container">
+    
+            <!-- Logo / About -->
+            <div class="footer-box">
+                <img src="./white.webp" alt="Stackly Logo" class="footer-logo"  style="height:60px;">
+   
+               
+                <!-- <p>We deliver secure, scalable and innovative IT services for global businesses.</p><br> -->
+    
+                <!-- Social Icons -->
+                <div class="footer-social">
+                    <a href="./404.html"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="./404.html"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="./404.html"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="./404.html"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+    
+            <!-- Quick Links -->
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="./home2.html">Home </a></li>
+                    <li><a href="./services1.html">Services</a></li>
+                    <li><a href="./about1.html">About</a></li>
+                    <li><a href="./casestudies.html">Case Studies</a></li>
+                    <li><a href="./contact1.html">Contact</a></li>
+                </ul>
+            </div>
+    
+            <!-- Address -->
+            <div class="footer-box">
+                <h3>Our Address</h3>
+                <p>
+                    MMR complex.<br>
+                    chinna tirupathi kovil street,<br>
+                    salem,Tamil nadu-636008<br>
+                    <!-- Bengaluru, Karnataka – 560066<br> -->
+                    India<br><br>
+    
+                    <strong>Phone:</strong> +91 98765 43210<br>
+                    <strong>Email:</strong> support@thestackly.com
+                </p>
+            </div>
+    
+            <!-- Google Map -->
+            <div class="footer-box">
+                <h3>Location</h3>
+                <iframe 
+                src="https://www.google.com/maps?q=Salem%20Tamil%20Nadu&output=embed"
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+    
+        </div>
+    
+        <div class="footer-bottom">
+            <p>© 2025 stackly | All Rights Reserved</p>
+        </div>
+    </footer>
+
+
+    
+<script src="./responsive.js"></script>
+
+
+</body>
+</html>
+
+  

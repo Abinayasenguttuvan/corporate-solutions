@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Solutions & Technology</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+    
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+        <a href="home2.html">   
+            <img src="./white.webp" alt="Stackly Logo" style="height: 60px; ">
+          </a>
+          
+
+        <!-- <div class="logo">Tech<span>Solutions</span></div> -->
+
+        <!-- Navigation -->
+        <nav class="navbar">
+            <ul class="nav-links" >
+
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-btn">Home <i class="fa-solid fa-caret-down"></i></a>
+                
+                    <ul class="dropdown-content">
+                        <li><a href="./index.html">Home 1</a></li>
+                        <li><a href="./home2.html">Home 2</a></li>
+                    </ul>
+                </li>
+                
+
+                <li><a href="./services1.html">Services</a></li>
+                <li><a href="./aboutus1.html">About</a></li>
+                <li><a href="./casestudies.html">Case-Studies</a></li>
+                <li><a href="./dashboard1.html">dashboard</a></li>
+                <li><a href="./contact1.html">Contact</a></li>
+                <li><a href="./login1.html">Login</a></li>
+
+            </ul>
+        </nav>
+
+
+        
+
+        <!-- Toggle -->
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+    </header>
+    <style>
+  /* Global Styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  /* Hero Section */
+  .hero {
+    position: relative;
+    background: url('./AI.webp') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+  }
+  .hero::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.5);
+  }
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ffdd59;
+  }
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  .btn-primary {
+    padding: 12px 30px;
+    background-color: #ff6b81;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .btn-primary:hover {
+    background-color: #ff4757;
+  }
+
+  /* Services Section */
+  .services {
+    padding: 80px 20px;
+    text-align: center;
+    background: #fff;
+  }
+  .services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #1e90ff;
+  }
+  .service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  .service-card {
+    background: #f1f3f6;
+    padding: 30px;
+    border-radius: 20px;
+    width: 300px;
+    transition: transform 0.3s;
+  }
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+  }
+  .service-card img {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+  .service-card h3 {
+    margin-bottom: 15px;
+    color: #ff6b81;
+  }
+
+  /* Features Section */
+  .features {
+    background: url('./log.webp') no-repeat center center/cover;
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  .features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #fff;
+  }
+  .feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  .feature-item {
+    background: rgba(0,0,0,0.6);
+    padding: 30px;
+    border-radius: 20px;
+    width: 250px;
+    transition: transform 0.3s;
+  }
+  .feature-item:hover {
+    transform: scale(1.05);
+  }
+  .feature-item img {
+    width: 60px;
+    margin-bottom: 15px;
+  }
+
+  
+ 
+  /* Animations */
+  @keyframes fadeIn {
+    0% {opacity: 0; transform: translateY(20px);}
+    100% {opacity: 1; transform: translateY(0);}
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .service-cards, .feature-list {
+      flex-direction: column;
+      align-items: center;
+    }
+    .hero h1 {
+      font-size: 2rem;
+    }
+    .hero p {
+      font-size: 1rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>AI & Automation Solutions for Modern Businesses</h1>
+    <p>Accelerate your growth with intelligent automation and AI-powered insights.</p>
+    <button class="btn-primary" onclick="window.location.href='./services1.html'">Explore Solutions</button>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section class="services" id="services">
+  <h2>Our Services</h2>
+  <div class="service-cards">
+    <div class="service-card">
+      <img src="./AI chatbot.webp" alt="AI Solutions">
+      <h3>AI Solutions</h3>
+      <p>Implement intelligent algorithms to optimize business processes and decision-making.</p>
+    </div>
+    <div class="service-card">
+      <img src="./automation.webp" alt="Automation">
+      <h3>Automation</h3>
+      <p>Streamline repetitive tasks and improve efficiency with advanced automation tools.</p>
+    </div>
+    <div class="service-card">
+      <img src="./data analytics 1.webp" alt="Data Analytics">
+      <h3>Data Analytics</h3>
+      <p>Turn raw data into actionable insights using predictive analytics and AI models.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section class="features">
+  <h2>Why Choose Us</h2>
+  <div class="feature-list">
+    <div class="feature-item">
+      <img src="./fast deployment.webp" alt="Fast Deployment">
+      <h4>Fast Deployment</h4>
+      <p>Rapid implementation of AI & automation solutions for quick business impact.</p>
+    </div>
+    <div class="feature-item">
+      <img src="./secure.webp" alt="Secure Solutions">
+      <h4>Secure Solutions</h4>
+      <p>High-standard security practices to protect your data and operations.</p>
+    </div>
+    <div class="feature-item">
+      <img src="./ab1.webp" alt="24/7 Support">
+      <h4>24/7 Support</h4>
+      <p>Dedicated support team to ensure smooth operations at all times.</p>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- <footer> -->
+    <footer class="footer">
+        <div class="footer-container">
+    
+            <!-- Logo / About -->
+            <div class="footer-box">
+                <img src="./white.webp" alt="Stackly Logo" class="footer-logo"  style="height:60px;">
+   
+               
+                <!-- <p>We deliver secure, scalable and innovative IT services for global businesses.</p><br> -->
+    
+                <!-- Social Icons -->
+                <div class="footer-social">
+                    <a href="./404.html"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="./404.html"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="./404.html"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="./404.html"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+    
+            <!-- Quick Links -->
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="./home2.html">Home </a></li>
+                    <li><a href="./services1.html">Services</a></li>
+                    <li><a href="./about1.html">About</a></li>
+                    <li><a href="./casestudies.html">Case Studies</a></li>
+                    <li><a href="./contact1.html">Contact</a></li>
+                </ul>
+            </div>
+    
+            <!-- Address -->
+            <div class="footer-box">
+                <h3>Our Address</h3>
+                <p>
+                    MMR complex.<br>
+                    chinna tirupathi kovil street,<br>
+                    salem,Tamil nadu-636008<br>
+                    <!-- Bengaluru, Karnataka – 560066<br> -->
+                    India<br><br>
+    
+                    <strong>Phone:</strong> +91 98765 43210<br>
+                    <strong>Email:</strong> support@thestackly.com
+                </p>
+            </div>
+    
+            <!-- Google Map -->
+            <div class="footer-box">
+                <h3>Location</h3>
+                <iframe 
+                src="https://www.google.com/maps?q=Salem%20Tamil%20Nadu&output=embed"
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+    
+        </div>
+    
+        <div class="footer-bottom">
+            <p>© 2025 stackly | All Rights Reserved</p>
+        </div>
+    </footer>
+
+<script src="./script.js"></script>
+<script src="./responsive.js"></script>
+
+
+</body>
+</html>
+
+
