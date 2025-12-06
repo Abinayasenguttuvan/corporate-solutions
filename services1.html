@@ -6,8 +6,9 @@
     <title>Corporate solutions</title>
 
     <!-- CSS Files -->
-    <link rel="stylesheet" href="./services1.html">
+   
     <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="./services1.css">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -114,104 +115,7 @@
     </div>
   </section>
   
-  <!-- CSS for Services Page -->
-  <style>
-    /* Hero Section */
-    .services-hero {
-      position: relative;
-      height: 60vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      overflow: hidden;
-      color: #fff;
-    }
-    .services-hero .hero-bg {
-      position: absolute;
-      top:0; left:0; width:100%; height:100%;
-      background: url('./ima.webp') no-repeat center center/cover;
-      filter: brightness(0.6);
-    }
-    .services-hero .hero-content {
-      position: relative;
-      z-index:1;
-      animation: fadeIn 2s ease-in-out;
-    }
-    .services-hero h1 {
-      font-size: 3rem;
-      margin-bottom: 15px;
-      background: linear-gradient(90deg, #ff6b81, #ffd93d);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    .services-hero p {
-      font-size: 1.2rem;
-    }
-  
-    /* Services Cards Section */
-    .services-list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 60px 20px;
-      gap: 30px;
-      background: #f5f7fa;
-    }
-    .service-card {
-      position: relative;
-      width: 300px;
-      height: 350px;
-      border-radius: 20px;
-      overflow: hidden;
-      cursor: pointer;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-      transition: transform 0.4s, box-shadow 0.4s;
-    }
-    .service-card:hover {
-      transform: translateY(-10px) scale(1.05);
-      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-    }
-    .card-bg {
-      position: absolute;
-      top:0; left:0; width:100%; height:100%;
-      background-size: cover;
-      background-position: center;
-      filter: brightness(0.5);
-      transition: transform 0.5s;
-    }
-    .service-card:hover .card-bg {
-      transform: scale(1.1);
-    }
-    .card-content {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      padding: 20px;
-      color: #fff;
-      background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
-    }
-    .card-content h2 {
-      margin-bottom: 10px;
-      font-size: 1.5rem;
-    }
-    .card-content p {
-      font-size: 0.95rem;
-    }
-  
-    /* Animations */
-    @keyframes fadeIn {
-      0% {opacity: 0; transform: translateY(20px);}
-      100% {opacity: 1; transform: translateY(0);}
-    }
-  
-    /* Responsive */
-    @media(max-width: 768px){
-      .services-list { flex-direction: column; align-items: center; }
-      .service-card { width: 90%; height: auto; }
-      .card-content p { font-size: 1rem; }
-    }
-  </style>
+ 
 
   <!-- <footer> -->
     <footer class="footer">
