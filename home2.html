@@ -6,8 +6,9 @@
     <title>Corporate solutions</title>
 
     <!-- CSS Files -->
-    <link rel="stylesheet" href="./style.css">
+    
     <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="./style1.css">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -46,10 +47,7 @@
                 <li><a href="./login1.html">Login</a></li>
 
             </ul>
-        </nav>
-
-
-        
+          </nav>
 
         <!-- Toggle -->
         <div class="menu-toggle" id="menu-toggle">
@@ -57,215 +55,352 @@
         </div>
 
     </header>
-    <style>
-  /* Global Styles */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f5f7fa;
-    color: #333;
-  }
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
+   
 
-  /* Hero Section */
-  .hero {
-    position: relative;
-    background: url('./AI.webp') no-repeat center center/cover;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    text-align: center;
-  }
-  .hero::after {
-    content: "";
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background-color: rgba(0,0,0,0.5);
-  }
-  .hero-content {
-    position: relative;
-    z-index: 1;
-    max-width: 800px;
-    animation: fadeIn 2s ease-in-out;
-  }
-  .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    color: #ffdd59;
-  }
-  .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-  }
-  .btn-primary {
-    padding: 12px 30px;
-    background-color: #ff6b81;
-    color: #fff;
-    border: none;
-    border-radius: 50px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  .btn-primary:hover {
-    background-color: #ff4757;
-  }
-
-  /* Services Section */
-  .services {
-    padding: 80px 20px;
-    text-align: center;
-    background: #fff;
-  }
-  .services h2 {
-    font-size: 2.5rem;
-    margin-bottom: 50px;
-    color: #1e90ff;
-  }
-  .service-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-  }
-  .service-card {
-    background: #f1f3f6;
-    padding: 30px;
-    border-radius: 20px;
-    width: 300px;
-    transition: transform 0.3s;
-  }
-  .service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
-  }
-  .service-card img {
-    width: 200px;
-    margin-bottom: 20px;
-  }
-  .service-card h3 {
-    margin-bottom: 15px;
-    color: #ff6b81;
-  }
-
-  /* Features Section */
-  .features {
-    background: url('./log.webp') no-repeat center center/cover;
-    color: #fff;
-    padding: 80px 20px;
-    text-align: center;
-  }
-  .features h2 {
-    font-size: 2.5rem;
-    margin-bottom: 50px;
-    color: #fff;
-  }
-  .feature-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-  }
-  .feature-item {
-    background: rgba(0,0,0,0.6);
-    padding: 30px;
-    border-radius: 20px;
-    width: 250px;
-    transition: transform 0.3s;
-  }
-  .feature-item:hover {
-    transform: scale(1.05);
-  }
-  .feature-item img {
-    width: 60px;
-    margin-bottom: 15px;
-  }
-
-  
- 
-  /* Animations */
-  @keyframes fadeIn {
-    0% {opacity: 0; transform: translateY(20px);}
-    100% {opacity: 1; transform: translateY(0);}
-  }
-
-  /* Responsive */
-  @media (max-width: 768px) {
-    .service-cards, .feature-list {
-      flex-direction: column;
-      align-items: center;
-    }
-    .hero h1 {
-      font-size: 2rem;
-    }
-    .hero p {
-      font-size: 1rem;
-    }
-  }
-</style>
-</head>
 <body>
 
-<!-- Hero Section -->
+
+
+
+  
+
+<!-- ================= HERO ================= -->
 <section class="hero">
+  <div class="hero-bg"></div>
+
   <div class="hero-content">
-    <h1>AI & Automation Solutions for Modern Businesses</h1>
-    <p>Accelerate your growth with intelligent automation and AI-powered insights.</p>
-    <button class="btn-primary" onclick="window.location.href='./services1.html'">Explore Solutions</button>
+    <h1 class="wave-text">
+      <span>AI</span>
+      <span class="bold">Automation</span>
+      <span>for</span>
+      <span class="bold">Future</span>
+      <span>Businesses</span>
+    </h1>
+
+    <p>We design, build and automate intelligent systems that scale.</p>
+  </div>
+
+  <img src="./AI chatbot.webp" class="hero-center-img">
+
+  <div class="hero-side hero-left">
+    <img src="./ai2.webp">
+    <img src="./ai3.webp">
+  </div>
+
+  <div class="hero-side hero-right">
+    <img src="./ai4.webp">
+    <img src="./AI.webp">
   </div>
 </section>
 
-<!-- Services Section -->
-<section class="services" id="services">
-  <h2>Our Services</h2>
-  <div class="service-cards">
-    <div class="service-card">
-      <img src="./AI chatbot.webp" alt="AI Solutions">
-      <h3>AI Solutions</h3>
-      <p>Implement intelligent algorithms to optimize business processes and decision-making.</p>
+<!-- ================= PROJECTS ================= -->
+<section class="projects">
+  <h2 class="projects-title">Check Our AI Projects</h2>
+  <p class="projects-subtitle">
+    Real-world AI solutions that transform businesses through automation,
+    intelligence, and scalable technology.
+  </p>
+
+  <div class="project-grid">
+
+    <div class="project-card">
+      <img src="ai2.webp" alt="AI CRM">
+      <div class="card-overlay"></div>
+
+      <div class="card-content">
+        <h3>AI CRM Platform</h3>
+        <p>
+          Intelligent customer relationship management powered by automation,
+          predictive insights, and real-time analytics.
+        </p>
+        <span class="card-tag">Enterprise AI</span>
+      </div>
     </div>
-    <div class="service-card">
-      <img src="./automation.webp" alt="Automation">
-      <h3>Automation</h3>
-      <p>Streamline repetitive tasks and improve efficiency with advanced automation tools.</p>
+
+    <div class="project-card">
+      <img src="./AI chatbot.webp" alt="Chatbots">
+      <div class="card-overlay"></div>
+
+      <div class="card-content">
+        <h3>AI Chatbots</h3>
+        <p>
+          Conversational AI bots designed to engage users, resolve queries,
+          and automate customer support 24/7.
+        </p>
+        <span class="card-tag">Conversational AI</span>
+      </div>
     </div>
-    <div class="service-card">
-      <img src="./data analytics 1.webp" alt="Data Analytics">
-      <h3>Data Analytics</h3>
-      <p>Turn raw data into actionable insights using predictive analytics and AI models.</p>
+
+    <div class="project-card">
+      <img src="./ai4.webp" alt="Predictive AI">
+      <div class="card-overlay"></div>
+
+      <div class="card-content">
+        <h3>Predictive AI</h3>
+        <p>
+          Data-driven forecasting models that help businesses predict trends,
+          optimize decisions, and reduce risks.
+        </p>
+        <span class="card-tag">Data Intelligence</span>
+      </div>
     </div>
+
   </div>
 </section>
 
-<!-- Features Section -->
-<section class="features">
-  <h2>Why Choose Us</h2>
-  <div class="feature-list">
-    <div class="feature-item">
-      <img src="./fast deployment.webp" alt="Fast Deployment">
-      <h4>Fast Deployment</h4>
-      <p>Rapid implementation of AI & automation solutions for quick business impact.</p>
+
+
+<!-- ================= WHAT WE DO ================= -->
+
+<section class="what-we-do">
+  <div class="wwd-container">
+
+    <h2 class="wwd-title">What We Do</h2>
+    <p class="wwd-subtitle">
+      We automate, optimize, and scale business operations using
+      intelligent AI-driven solutions built for real-world impact.
+    </p>
+
+    <div class="wwd-content">
+      <p>
+        Our team specializes in building intelligent automation systems
+        that reduce manual effort, enhance decision-making, and improve
+        operational efficiency across industries.
+      </p>
+
+      <p>
+        From AI-powered analytics and process automation to predictive
+        marketing and enterprise-grade integrations, we help businesses
+        move faster, smarter, and more securely.
+      </p>
     </div>
-    <div class="feature-item">
-      <img src="./secure.webp" alt="Secure Solutions">
-      <h4>Secure Solutions</h4>
-      <p>High-standard security practices to protect your data and operations.</p>
+
+    <!-- ORBITING IMAGES -->
+    <div class="orbit">
+      <img src="./orbit1.webp" alt="AI Automation">
+      <img src="./orbit2.webp" alt="AI Analytics">
+      <img src="./orbit3.webp" alt="AI Integration">
     </div>
-    <div class="feature-item">
-      <img src="./ab1.webp" alt="24/7 Support">
-      <h4>24/7 Support</h4>
-      <p>Dedicated support team to ensure smooth operations at all times.</p>
+
+  </div>
+</section>
+
+
+<!-- ================= AI MARKETING ================= -->
+<section class="cube-section" id="ai-solutions">
+  <div class="cube-container">
+
+    <h2 class="cube-title">AI Marketing Solutions</h2>
+
+    <!-- TYPEWRITER TEXT -->
+    <p class="cube-subtitle">
+      <span id="cube-type-1"></span>
+    </p>
+
+    <p class="cube-description">
+      <span id="cube-type-2"></span>
+    </p>
+
+    <!-- EXTRA CONTENT -->
+    <div class="cube-features">
+      <div class="feature">🚀 Predictive SEO Optimization</div>
+      <div class="feature">📊 Real-Time Analytics & Insights</div>
+      <div class="feature">🤖 Automated Campaign Management</div>
+      <div class="feature">📈 AI-Driven Growth Strategies</div>
     </div>
+
+    <!-- 3D CUBE -->
+    <div class="cube-wrapper">
+      <div class="cube">
+        <div class="face front">SEO AI</div>
+        <div class="face back">Automation</div>
+        <div class="face left">Analytics</div>
+        <div class="face right">Ads AI</div>
+        <div class="face top">Content AI</div>
+        <div class="face bottom">Growth</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+<!-- ================= CASE STUDIES ================= -->
+<section class="case-studies">
+  <h2 class="case-title">Case Studies</h2>
+  <p class="case-subtitle">
+    Real-world AI automation success stories delivering measurable impact.
+  </p>
+
+  <div class="case-grid">
+
+    <!-- CASE 1 -->
+    <div class="case-card">
+      <div class="case-front">
+        <div class="case-icon">💳</div>
+        <h3>FinTech AI Platform</h3>
+      </div>
+
+      <div class="case-back">
+        <h3>FinTech AI Platform</h3>
+        <p>
+          Built an AI-powered credit risk engine that reduced fraud by 42%,
+          improved approval speed, and automated decision-making workflows.
+        </p>
+        <span class="case-tag">Finance • AI • Automation</span>
+      </div>
+    </div>
+
+    <!-- CASE 2 -->
+    <div class="case-card">
+      <div class="case-front">
+        <div class="case-icon">🛍️</div>
+        <h3>Retail Automation</h3>
+      </div>
+
+      <div class="case-back">
+        <h3>Retail Automation</h3>
+        <p>
+          Implemented AI-driven inventory forecasting and customer behavior
+          analysis to increase revenue and reduce operational costs.
+        </p>
+        <span class="case-tag">Retail • AI • Analytics</span>
+      </div>
+    </div>
+
+    <!-- CASE 3 -->
+    <div class="case-card">
+      <div class="case-front">
+        <div class="case-icon">🏥</div>
+        <h3>Healthcare AI</h3>
+      </div>
+
+      <div class="case-back">
+        <h3>Healthcare AI</h3>
+        <p>
+          Designed an AI diagnostics platform that enhanced patient outcomes
+          by automating reports and enabling predictive insights.
+        </p>
+        <span class="case-tag">Healthcare • ML • Automation</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= TRUSTED ================= -->
+<section class="trusted">
+
+  <!-- VIDEO -->
+  <video autoplay muted loop playsinline class="trusted-video">
+    <source src="./cre2.mp4" type="video/mp4">
+  </video>
+
+  <!-- CONTENT -->
+  <div class="trusted-content">
+    <h2>Trusted by Leading Brands</h2>
+    <p>Powering global enterprises with intelligent AI automation.</p>
+  </div>
+
+  <!-- SCROLLING FAQ -->
+  <div class="faq-scroll">
+    <div class="faq-track">
+
+      <div class="faq-item">
+        <h4>What is AI Automation?</h4>
+        <p>AI automation uses machine learning and intelligent systems to streamline business processes.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>How does AI improve efficiency?</h4>
+        <p>AI reduces manual effort, increases accuracy, and enables faster decision-making.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>Is AI automation secure?</h4>
+        <p>Yes, AI solutions follow enterprise-grade security and compliance standards.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>Which industries benefit from AI?</h4>
+        <p>Finance, healthcare, retail, logistics, marketing, and manufacturing.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>Can AI scale with my business?</h4>
+        <p>AI systems are designed to scale seamlessly as your business grows.</p>
+      </div>
+
+      <!-- DUPLICATE FOR SMOOTH LOOP -->
+      <div class="faq-item">
+        <h4>What is AI Automation?</h4>
+        <p>AI automation uses machine learning and intelligent systems to streamline business processes.</p>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- ================= AWARDS ================= -->
+<section class="awards-section">
+  <h2 class="awards-title">Awards That Define Our Journey</h2>
+  <p class="awards-subtitle">
+    Recognized globally for innovation, excellence, and impact in AI automation.
+  </p>
+
+  <div class="awards-grid">
+
+    <!-- Award 1 -->
+    <div class="award-profile">
+      <div class="award-image">
+        <img src="./award1.webp" alt="Best AI Startup">
+      </div>
+      <div class="award-details">
+        <h3>Best AI Startup 2024</h3>
+        <span class="award-category">AI Innovation</span>
+        <p>
+          Honored for building scalable AI-driven automation platforms that
+          transformed enterprise workflows globally.
+        </p>
+      </div>
+    </div>
+
+    <!-- Award 2 -->
+    <div class="award-profile">
+      <div class="award-image">
+        <img src="./award2.webp" alt="Innovation Award">
+      </div>
+      <div class="award-details">
+        <h3>Innovation Award</h3>
+        <span class="award-category">Technology Leadership</span>
+        <p>
+          Awarded for pioneering intelligent automation strategies that
+          delivered measurable business growth.
+        </p>
+      </div>
+    </div>
+
+    <!-- Award 3 -->
+    <div class="award-profile">
+      <div class="award-image">
+        <img src="./award3.webp" alt="Top Automation Partner">
+      </div>
+      <div class="award-details">
+        <h3>Top Automation Partner</h3>
+        <span class="award-category">Enterprise Automation</span>
+        <p>
+          Recognized as a trusted automation partner for delivering secure,
+          high-performance AI solutions.
+        </p>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -335,7 +470,7 @@
         </div>
     </footer>
 
-<script src="./script.js"></script>
+<script src="./script1.js"></script>
 <script src="./responsive.js"></script>
 
 
