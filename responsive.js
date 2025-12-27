@@ -21,4 +21,26 @@ dropdownBtn.addEventListener("click", (e) => {
 });
 
 
+  const navLinks = document.querySelectorAll(".nav-links a");
+  const currentPage = window.location.pathname.split("/").pop();
+
+  navLinks.forEach(link => {
+    const linkPage = link.getAttribute("href");
+
+    // Home page (index.html)
+    if (
+      (currentPage === "" || currentPage === "index.html") &&
+      linkPage === "index.html"
+    ) {
+      link.classList.add("active");
+    }
+
+    // Other pages
+    if (linkPage === currentPage) {
+      link.classList.add("active");
+    }
+  });
+
+
+
 
