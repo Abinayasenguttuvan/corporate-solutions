@@ -720,10 +720,12 @@ body{color:#000}
   }
   
   .case-back h3 {
+    color: white;
     margin-bottom: 12px;
   }
   
   .case-back p {
+    color: white;
     font-size: 18px;
     line-height: 1.7;
     opacity: 0.9;
